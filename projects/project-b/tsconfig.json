@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "rootDir": "./",
+    "target": "ESNext",
+    "module": "ESNext",
+    "declaration": true,
+    "outDir": "./dist",
+    "composite": true,
+    "strict": true,
+    "paths": {
+      "@project-a/*": ["../project-a/src/*"]
+    },
+    "esModuleInterop": true
+  },
+  "references": [
+    {
+      "path": "../project-a"
+    }
+  ],
+  "include": ["src/**/*.ts", "../project-a/src/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
